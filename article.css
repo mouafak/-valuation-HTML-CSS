@@ -28,7 +28,7 @@ body{
     grid-template-rows: minmax(50px,auto);
     grid-template-areas:
     "M M M"
-    "A C C"
+    "C C C"
     "F F F"
     ;
 }
@@ -109,8 +109,11 @@ body{
     display: flex;
     overflow: hidden;
 }
-.arti .arti_para{
+.arti_para{
     padding: 10px 30px;
+}
+.arti_para ul , li , h4 {
+    padding: 0 30px;
 }
 
 /*********************** aside **************/

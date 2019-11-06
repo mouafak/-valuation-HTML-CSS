@@ -28,7 +28,7 @@ body{
     grid-template-rows: minmax(50px,auto);
     grid-template-areas:
     "M M M"
-    "A C C"
+    "con con con"
     "F F F"
     ;
 }
@@ -81,51 +81,15 @@ body{
     color: #2ebaae;
 }
 /****************************** content *************/
-#content{
-    grid-area: C;
-    margin:0 48px;
-}
-.arti_section{
-    margin-top: 50px;
-}
-.arti{
+.conn{
+    grid-area: con;
     display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border: 1px solid rgb(160, 160, 160 , .3);
-    font-family: 'Raleway', sans-serif;
-    color: #3c3b3b;
-    line-height: 1.65;
-
-}
-.arti .arti_header{
-    padding: 10px 30px;
-    border-bottom: 1px solid rgb(160, 160, 160 , .3);
-    font-size: 24px;
-    letter-spacing: 6px;
-}
-.arti .arti_image img{
-    padding: 20px 20px;
-    display: flex;
-    overflow: hidden;
-}
-.arti .arti_para{
-    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column; 
+    height: 70vh;
 }
 
-/*********************** aside **************/
-#aside_left{
-    grid-area: A;
-    display: flex;
-    border: 1px solid rgb(160, 160, 160 , .3);
-    margin: 48px 0px 0 48px;
-    padding: 30px 0 0 30px;
-    background-color: #fff;
-}
-#aside_left p{
-    padding: 15px;
-    text-align: left;
-}
 /****************** footer ********************/
 #onefooter{
     grid-area: F;
