@@ -164,7 +164,6 @@ body{
     transition: linear .4s;
     padding: 0;
     margin: 0;
-    auto
 }
 #conn_cont input:focus,#conn_cont input:hover
 {
@@ -178,12 +177,7 @@ body{
     padding: 2px 0;
 }
 
-/* responsive */
-/* @media(max-height:950px){
-    #conn_cont{
-        background-image: none;
-    }
-} */
+
 /****************** footer ********************/
 #onefooter{
     grid-area: F;
@@ -200,4 +194,3 @@ body{
 }
 
 /******************************************************/
-/******************************** connexion ****************************************/
