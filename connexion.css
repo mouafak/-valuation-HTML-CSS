@@ -1,0 +1,203 @@
+/*
+**  creation by mouafak alali
+**  Évaluation HTML  CSS
+**  6 novembre 2019
+*/
+
+:root{
+    --main-color: #f4f4f4;
+    --text-main-color :#646464;
+}
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: var(--text-main-color);
+    line-height: 1.75;
+}
+body{
+    background-color: var(--main-color);
+}
+
+/****************** container *********************/
+#container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: minmax(50px,auto);
+    grid-template-areas:
+    "M M M"
+    "co co co"
+    "F F F"
+    ;
+    overflow: hidden;
+}
+
+/*********************** menu **************************/
+#navbar{
+    grid-area: M;
+    background-color: #ffffff;
+    display: flex;
+    height: 56px;
+    align-items: center;
+    border-bottom: 1px solid rgb(160, 160, 160, .3);
+    font-size: 16px;
+    font-family: 'Raleway',sans-serif;
+    line-height: 1.75;
+    position: fixed;
+    width: 100%;
+}
+#logo{
+    background-color: #fff;
+    font-size: 16px;
+    color: #3c3b3b;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    border-right: 1px solid rgb(160, 160, 160 , .3);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#logo p{
+    display: inline-block;
+    margin:0 24px ;
+    
+}
+#ul_menu{
+    display: flex;
+    font-size: 11.2px;
+    color : #3c3b3b
+
+
+}
+#ul_menu li a{
+    padding: 0 20px;
+    border-left: 1px solid rgb(160, 160, 160 , .3);
+}
+#ul_menu :nth-child(1) a{
+    border: none;
+}
+#ul_menu li a:hover{
+    color: #2ebaae;
+}
+/****************************** connexion *************/
+
+#conn{
+    grid-area: co;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: #2ebaae;
+}
+#conn_cont{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 1.65;    
+    width: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0 10px;
+}
+#conn_cont form{
+    width: 35vh;
+}
+#conn_cont input,button,h1,label{
+    display: block;
+}
+#conn_cont h1{
+    margin: 0;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+#conn_cont form label{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #3c3b3b;
+}
+
+#conn_cont button{
+    width: 25vh;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    background-color: #2ebaaeb4;
+    border: none;
+    padding: 10px;
+    margin: 30px auto;
+    transition: linear .2s;
+    outline-style: none;
+}
+#conn_cont button:hover{
+    background-color: #2ebaae;
+    cursor: pointer;
+}
+#conn_cont a{
+    color: royalblue;
+}
+#conn_cont a:hover{
+    color: rgb(15, 69, 233) ;
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+#conn_cont input{
+    background-color:rgba(255, 255, 255, 0) ;
+    width: 10vh;
+    height: vh;
+    border: none;
+    border-bottom: 3px solid #445d5b32;
+    outline: none;
+    color:#3c3b3b;
+    font-weight: none;
+    font-size: 18px;
+    transition: linear .4s;
+    padding: 0;
+    margin: 0;
+    auto
+}
+#conn_cont input:focus,#conn_cont input:hover
+{
+    outline:0;
+    border-bottom: 3px solid #2ebaae;
+    width: 35vh;
+}
+
+#conn_cont p{
+    font-size: 15px;
+    padding: 2px 0;
+}
+
+/* responsive */
+/* @media(max-height:950px){
+    #conn_cont{
+        background-image: none;
+    }
+} */
+/****************** footer ********************/
+#onefooter{
+    grid-area: F;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    /* margin-top: 50px; */
+    background-color: #fff;
+    padding: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 100%;
+    overflow: hidden;
+}
+
+/******************************************************/
+/******************************** connexion ****************************************/
